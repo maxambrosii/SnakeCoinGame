@@ -63,7 +63,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\CameraControlTPS.cs" />
     <Compile Include="Assets\Scripts\CoinGeneration.cs" />
+    <Compile Include="Assets\Scripts\CoinMovement.cs" />
+    <Compile Include="Assets\Scripts\FoodCoin.cs" />
+    <Compile Include="Assets\Scripts\Helper Scripts\Tags.cs" />
+    <Compile Include="Assets\Scripts\Player Scripts\PlayerController.cs" />
+    <Compile Include="Assets\Scripts\TailMovement.cs" />
     <Reference Include="UnityEngine">
       <HintPath>C:/Users/crm0167/Desktop/Unity/2019.4.9f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
@@ -616,20 +622,20 @@
     <Reference Include="Unity.CollabProxy.Editor">
       <HintPath>C:/Users/crm0167/Desktop/SnakeCoinGame/Snake Coin/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Postprocessing.Editor">
+      <HintPath>C:/Users/crm0167/Desktop/SnakeCoinGame/Snake Coin/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.Rider.Editor">
       <HintPath>C:/Users/crm0167/Desktop/SnakeCoinGame/Snake Coin/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Postprocessing.Runtime">
+      <HintPath>C:/Users/crm0167/Desktop/SnakeCoinGame/Snake Coin/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
       <HintPath>C:/Users/crm0167/Desktop/SnakeCoinGame/Snake Coin/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>C:/Users/crm0167/Desktop/SnakeCoinGame/Snake Coin/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Postprocessing.Editor">
-      <HintPath>C:/Users/crm0167/Desktop/SnakeCoinGame/Snake Coin/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Postprocessing.Runtime">
-      <HintPath>C:/Users/crm0167/Desktop/SnakeCoinGame/Snake Coin/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup></ItemGroup>

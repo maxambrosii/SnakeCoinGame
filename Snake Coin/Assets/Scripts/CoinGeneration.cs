@@ -5,7 +5,7 @@ using UnityEngine;
 public class CoinGeneration : MonoBehaviour
 {
     [SerializeField]
-    private GameObject childCoin;
+    private GameObject foodCoin;
 
     private float XSize = 10.9f;
     private float ZSizeFront = 5.4f;
@@ -14,33 +14,27 @@ public class CoinGeneration : MonoBehaviour
     private Vector3 currentPosition;
     private GameObject currentChildrenCoin;
 
-    //Left : X = 10.9
-    //Right : X = -10.9
-
-    //Back Z = -2.6
-    //Front: 5.4
-    void Start()
-    {
-        InvokeRepeating("GenerateCoin", 1,1);    
-    }
-
     void GenerateRandomPosition()
     {
-        currentPosition = new Vector3(Random.Range(XSize*-1, XSize), 0.5f, Random.Range(ZSizeBack, ZSizeFront));
+        currentPosition = new Vector3(Random.Range(XSize*-1, XSize), 0f, Random.Range(ZSizeBack, ZSizeFront));
     }
   
-    void GenerateCoin()
+    public void GenerateCoin()
     {
         GenerateRandomPosition();
-        currentChildrenCoin = GameObject.Instantiate(childCoin, currentPosition, Quaternion.identity);
-        GenerateRandomPosition();
-        currentChildrenCoin = GameObject.Instantiate(childCoin, currentPosition, Quaternion.identity);
-        GenerateRandomPosition();
-        currentChildrenCoin = GameObject.Instantiate(childCoin, currentPosition, Quaternion.identity);
+        Debug.Log("Coin Generated");
+        currentChildrenCoin = GameObject.Instantiate(foodCoin, currentPosition, Quaternion.identity);
     }
 
+    private void Start()
+    {
+        GenerateCoin();
+    }
     void Update()
     {
-        
+        if (currentChildrenCoin == null)
+        {
+            GenerateCoin();
+        }   
     }
 }
